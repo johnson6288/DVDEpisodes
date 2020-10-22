@@ -25,4 +25,3 @@ production:
 #  database: db/production.sqlite3
 	adapter: postgresql
 	database: development
-	host: localhost
