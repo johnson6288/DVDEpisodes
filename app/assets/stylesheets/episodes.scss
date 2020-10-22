@@ -1,0 +1,148 @@
+// Place all the styles related to the Episodes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+//input {
+//    //background-color: #8dc6ff;
+//    border-radius: 6px;
+    //box-shadow: 1px 1px .5px grey;
+//}
+body {
+  Color:#161A16;
+  Background:url(dvd.png);
+  background-color: #215ead;
+  Background-repeat:no-repeat;
+  background-position:top, center;
+  margin: 0px auto;
+  background-size: 600px;
+  Text-align: center;
+  font-family: sans-serif, verdana;
+  font-size: 14px;
+}
+input[type=text], textarea, select {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  width: 350px;
+}
+input[type=submit]:hover {
+    border-radius: 5px;
+}
+ 
+input[type=text]:focus, textarea:focus, select:focus, inupt[type=submit]:focus {
+  box-shadow: inset 0 0 3px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+  border-radius: 5px;
+}
+section tbody tr:nth-child(odd) {
+   background-color: rgba(229, 247, 248, 0.9);
+}
+
+section table {
+  width: 100%;
+  background-color: white;
+}
+section table tr:hover {
+  background-color: #f5f5f5
+}
+
+section table th, td {
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+input[type=submit] {
+  border-radius: 5px;
+  background: #215ead;
+  color: white;
+  text-decoration: none;
+  text-shadow: -1px -1px 1px #616161;
+  position: relative;
+  padding: 5px 10px;
+  -webkit-box-shadow: 5px 5px 0 #666;
+  -moz-box-shadow: 5px 5px 0 #666;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  margin: 0 10px 0 0;
+}
+input[type=submit]:hover {
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 0 #666;
+  -moz-box-shadow: 0px 0px 0 #666;
+  top: 5px;
+  left: 5px;
+}
+form {
+  width: 590px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  //border: 6px solid #edf5f7 !important;
+  box-shadow: none !important;
+  padding-top: 10px;
+  position: relative;
+}
+Footer {
+  color: #161A16;
+  background-color: #e7e9e9;
+  margin: 0px auto;
+  max-width: 80%; 
+  min-width: 450px; 
+}
+Section {
+  color:#161A16;
+  max-width: 80%; 
+  min-width: 450px; 
+  margin: 0px auto; 
+  background-color: #e7e9e9;
+  Text-align:left;
+}
+section h1 {
+  text-align:center;
+  font-size:xx-large;
+}
+header {
+  top: 0px;
+  margin: 0px auto;
+  max-width: 80%; 
+  min-width: 450px; 
+  text-align: Center;
+  background-color: #e7e9e9;
+  font-size:xx-large;
+}
+nav {
+  baground-color: #e7e9e9;
+  margin: 0px auto; 
+  text-align: center;
+  max-width: 80%; 
+  min-width: 450px; 
+  }
+nav table {
+  background-color: #e7e9e9;
+  width: 100%;
+  margin: 0px auto;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+nav table td {
+  width:50%;
+  text-align: center;
+  //border-left: 2px solid #47729D;
+  //border-right: 2px solid #47729D;
+  margin: 0px
+  
+}
+nav table td + td {
+    border-left: 2px solid #47729D;
+}
+
+fieldset {
+  width: 350px;
+}

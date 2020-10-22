@@ -1,0 +1,40 @@
+<%= form_for @episode do |f| %>
+<fieldset>
+	<legend>Please enter the following information</legend>
+<% if @episode.errors.any? %>
+	<div id="error_explanation">
+		<h2>
+			<%= pluralize(@episode.errors.count, "error") %> prohibited
+			this article from being saved:
+		</h2>
+		<ul>
+			<% @episode.errors.full_messages.each do |msg| %>
+			<li><%= msg %></li>
+			<% end %>
+		</ul>
+	</div>
+
+<% end %>
+
+	<div>
+		<%= f.label :"Episode Title*" %><br>
+		<%= f.text_field :eptitle %>
+	</div>
+	<div>
+		<%= f.label :"show*" %><br>
+		<%= f.text_field :show %>
+	</div>
+	<div>
+		<%= f.label :"media*" %><br>
+		<%= f.select :media, ['DVD', 'VHS', 'Amazon', 'Other'] %>
+	</div>
+	<div>
+		<%= f.label :"Disc Title" %><br>
+		<%= f.text_field :disctitle %>
+	</div>
+	<div>
+		<%= f.submit %>
+	</div>
+	<p>*required fields</p>
+</fieldset>
+<% end %>

@@ -1,0 +1,24 @@
+<%= render 'header' %>
+<%= render 'nav' %>
+<section>
+<p>
+	<strong>Episode Title:</strong>
+	<%= @episode.eptitle %>
+</p>
+<p>
+	<strong>Show</strong>
+	<%= @episode.show %>
+</p>
+<p>
+	<strong>Media:</strong>
+	<%= @episode.media %>
+</p>
+<p>
+	<strong>Disc Title:</strong>
+	<%= @episode.disctitle %>
+</p>
+
+<%= link_to 'Back', episodes_path %>
+<%= link_to 'Edit', edit_episode_path(@episode) %>
+</section>
+<%= render 'footer' %>
