@@ -1,5 +1,5 @@
 class EpisodesController < ApplicationController
-  http_basic_authenticate_with name: "matt", password: "mypassword123", except: [:index, :show]
+  http_basic_authenticate_with name: "matt", password: "*hidden*", except: [:index, :show]
   
   def index
     @episodes = Episode.all
